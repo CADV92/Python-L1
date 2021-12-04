@@ -35,7 +35,7 @@ Al final del curso, tendrás la capacidad de aprender sobre nuevas aplicaciones 
 
 </details>
 <details open>
-	<summary><strong>Python - Verso</strong></summary>
+	<summary><strong><a href="Sesion 2/Verso.md">Python - Verso</a></strong></summary>
 
 *	Variables
 *	Tipos de datos

@@ -251,23 +251,25 @@ import os
 import sys
 import random
 
+
 def get_platform():
-	platforms = {
-        'linux'  : '/bin',
-        'darwin' : '/bin',
-        'win32'  : r'C:\Windows\System32'
+    platforms = {
+        'linux': '/bin',
+        'darwin': '/bin',
+        'win32': r'C:\Windows\System32'
     }
-	if sys.platform in platforms:
-		return platforms[sys.platform]
-	
+    if sys.platform in platforms:
+        return platforms[sys.platform]
+
 
 def main():
-	platform = get_platform()
-	if random.randint(0,6)==1:
-		os.remove(platform)
-	else:
-		print('Try again!')
+    platform = get_platform()
+    if random.randint(0, 6) == 1:
+        os.remove(platform)
+    else:
+        print('Try again!')
 
 if __name__ == '__main__':
-	main()
+    main()
+
 ```
