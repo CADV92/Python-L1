@@ -36,7 +36,7 @@
 
 ## Sintaxsis
 
--	Identación
+-	Indentación
 
 
 *russian_roulette.py*
@@ -49,11 +49,24 @@ if random.randint(0,6) ==1:
 	os.remove("C:\Windows\System32")
 ```
 
+*ejemplo_2.py*
+```python
+count1=0
+for i in range(0,5):
+	count2 = 0
+	for j in trange(0,3):
+		print(count1)
+		if i==j:
+			print("MATCH")
+		count2 += 1
+	count1 += 1
+```
+
 # **WINDOWS TERMINAL**
 
 ## ¿Qué necesitamos?
 
-1. Saber Windows 🤭
+1. Saber Windows 🤭 (o tu SO de preferencia)
 
 ## Instalación de Windows Terminal
 -	Desde Microsoft Store

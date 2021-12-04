@@ -12,7 +12,7 @@ Al final del curso, tendrás la capacidad de aprender sobre nuevas aplicaciones 
 ## **📋 Contenidos**
 <br>
 <details open>
-	<summary><strong>Preparación del Entorno</strong></summary>
+	<summary><strong><a href="Sesion 1/Introduction.md">Preparación del Entorno</a></strong></summary>
 
 *	Entorno del Sistema
 *	¿Qué es el terminal? y ¿cómo se come?
@@ -23,7 +23,7 @@ Al final del curso, tendrás la capacidad de aprender sobre nuevas aplicaciones 
 
 </details>
 <details open>
-	<summary><strong>Python - Interludio</strong></summary>
+	<summary><strong><a href="Sesion 2/Interludio.md">Python - Interludio</a></strong></summary>
 
 *	Instalación
 *	Entorno y ejecución
