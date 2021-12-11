@@ -62,7 +62,7 @@ Al final del curso, tendrás la capacidad de aprender sobre nuevas aplicaciones 
 
 *	Métodos de compresión de listas y diccionarios
 *	Funciones anónimas
-*	Funciones de grado superior
+*	Funciones de orden superior
 *	Errores
 *	Debugging
 *	Control de Errores
