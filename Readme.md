@@ -58,7 +58,7 @@ Al final del curso, tendrás la capacidad de aprender sobre nuevas aplicaciones 
 
 </details>
 <details open>
-	<summary><strong>Python - Estribillo</strong></summary>
+	<summary><strong><a href="Sesion 3/Estribillo.md">Python - Estribillo</a></strong></summary>
 
 *	Métodos de compresión de listas y diccionarios
 *	Funciones anónimas
