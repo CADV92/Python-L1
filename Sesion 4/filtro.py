@@ -72,7 +72,6 @@ DATA = [
 ]
 
 def run():
-
     # Comprehensions solutions
     all_python_devs = [worker["name"] for worker in DATA if worker["language"] == "python"]
     all_Chambita1_workers = [worker["name"] for worker in DATA if worker["organization"] == "Chambita 1"]

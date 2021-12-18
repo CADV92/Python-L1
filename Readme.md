@@ -12,7 +12,7 @@ Al final del curso, tendrás la capacidad de aprender sobre nuevas aplicaciones 
 ## **📋 Contenidos**
 <br>
 <details open>
-	<summary><strong><a href="Sesion 1/Introduction.md">Preparación del Entorno</a></strong></summary>
+	<summary><strong><a href="Introduction.md">Preparación del Entorno</a></strong></summary>
 
 *	Entorno del Sistema
 *	¿Qué es el terminal? y ¿cómo se come?
@@ -23,7 +23,7 @@ Al final del curso, tendrás la capacidad de aprender sobre nuevas aplicaciones 
 
 </details>
 <details open>
-	<summary><strong><a href="Sesion 2/Interludio.md">Python - Interludio</a></strong></summary>
+	<summary><strong><a href="Interludio.md">Python - Interludio</a></strong></summary>
 
 *	Instalación
 *	Entorno y ejecución
@@ -35,7 +35,7 @@ Al final del curso, tendrás la capacidad de aprender sobre nuevas aplicaciones 
 
 </details>
 <details open>
-	<summary><strong><a href="Sesion 2/Verso.md">Python - Verso</a></strong></summary>
+	<summary><strong><a href="Verso.md">Python - Verso</a></strong></summary>
 
 *	Variables
 *	Tipos de datos
@@ -58,7 +58,7 @@ Al final del curso, tendrás la capacidad de aprender sobre nuevas aplicaciones 
 
 </details>
 <details open>
-	<summary><strong><a href="Sesion 3/Estribillo.md">Python - Estribillo</a></strong></summary>
+	<summary><strong><a href="Estribillo.md">Python - Estribillo</a></strong></summary>
 
 *	Métodos de compresión de listas y diccionarios
 *	Funciones anónimas

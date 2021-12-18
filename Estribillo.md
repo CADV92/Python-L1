@@ -353,8 +353,8 @@ def duplica(num):
     try:
         assert isinstance(num,int), "SOLO SE PERMITEN NÚMEROS ENTEROS!"
         return num*2
-    except ValueError as ve:
-        print(ve)
+    except AssertionError as ae:
+        print(ae)
         return False
 ```
 
@@ -393,7 +393,7 @@ Manipular archivos es de suma importancia al momento de gestionar nuestros proye
 `with` Es un manejador contextual, nos ayuda a controlar el flujo del archivo (sirve para que el archivo no se dañe cuando existe algún cierre inesperado)
 
 ```python
-with open(<ruta>, <modo_apertura>) as <nombre>
+with open(<ruta>, <modo_apertura>) as <nombre>:
     ...
 ```
 
