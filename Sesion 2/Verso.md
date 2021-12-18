@@ -61,7 +61,7 @@ La asignación se realiza con un signo igual (=).
 
   ```python
   precio_final = precio * (1 - descuento)
-  msg = "Precio Final " + precio_final
+  msg = "Precio Final " + str(precio_final)
   ```
   </details><br/>
 
@@ -91,7 +91,7 @@ False
 True
 ```
 
-[PEP8 online](http://pep8online.com/checkresult)<br/><br/>
+[PEP8 online](http://pep8online.com/)<br/><br/>
 
 ## **Tipos de datos**
 
@@ -205,8 +205,8 @@ Las estructuras de control iterativas nos permiten repetir una porción de códi
   > El número de iteraciones está establecido.
   >```python
   > for <VARIABLE> in <OBJETO ITERABLE>:
-  >  <BLOQUE DE SENTENCIAS>
-  >   ...
+  >   <BLOQUE DE SENTENCIAS>
+  >   ...s
   > ```
 
 #### _Las declaraciones break y continue_
@@ -266,7 +266,7 @@ Las funciones son bloques de código que podemos reutilizar desde nuestro propio
 Definimos funciones empleando la palabra reservada `def`.
 
 ```python
-def <NOMBRE DE MI FUNCIÓN>:
+def <NOMBRE DE MI FUNCIÓN>():
   <
    BLOQUE DE SENTENCIAS DE
    LA FUNCIÓN
@@ -379,7 +379,7 @@ latlon = (-12, -76)
 Son objetos ordenados y definidas mediante `[]`.
 ```python
 # mi_lista = [elementos,...]
-latlon = (-12, -76)
+latlon = [-12, -76]
 ```
 
 

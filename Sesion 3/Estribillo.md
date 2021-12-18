@@ -8,22 +8,22 @@
 ```
 
 ```python
-squares = [ i for i in range(1, 100000) if i % 36 == 0]
-print(squares)
+valores = [ i for i in range(1, 100000) if i % 36 == 0]
+print(valores)
 ```
 
 ```python
 def main():
-	# squares = []
-	# for i in range(1, 101):
+    # squares = []
+    # for i in range(1, 101):
     #     if i % 3 != 0:
-	#         squares.append(i**2)
+    #         squares.append(i**2)
 
-    squares = [ i for i in range(1, 101) if i % 3 != 0]
+    squares = [ i**2 for i in range(1, 101) if i % 3 != 0]
     print(squares)
 
 if __name__ == '__main__':
-	main()
+    main()
 ```
 
 ### _Dictionary comprehensions_
@@ -39,16 +39,16 @@ print(dictionary)
 
 ```python
 def main():
-	# my_dict = {}
-	# for i in range(1, 101):
+    # my_dict = {}
+    # for i in range(1, 101):
     #     if i % 3 != 0:
-	#         my_dict[i] = i**3
+    #         my_dict[i] = i**3
 
-	my_dict = {i: i**3 for i in range(1,101) if i % 3 != 0}
-	print(my dict)
+    my_dict = {i: i**3 for i in range(1,101) if i % 3 != 0}
+    print(my_dict)
 
 if __name__ == '__main__':
-	main()
+    main()
 ```
 
 ## **Funciones anónimas _(lambda)_**
@@ -135,7 +135,7 @@ Las funciones de orden superior son aquellas que reciben como parámetro otra fu
   ```python
   from functools import reduce
   my_list = [2, 2, 2, 2, 2]
-  allMultiplied = reduce(lambda a, b: a * b, myList3)
+  allMultiplied = reduce(lambda a, b: a * b, my_list)
   print(allMultiplied)
   ```
   > _Nota: En el primer parámetro de nuestra función anónima sirve de variable totalizadora._
@@ -259,5 +259,166 @@ Consejos.
 
 ## **Debugging**
 ## **Control de Errores**
+
+El control de errores se realiza a través de un bloque de código `try-except`.
+
+```python
+try:
+    <BLOQUE DE SENTENCIAS TRY>
+    ...
+except:
+    <LANZAMIENTO DE EXCEPCIONES>
+    ...
+```
+
+
+```python
+try:
+    <BLOQUE DE SENTENCIAS TRY>
+    ...
+except:
+    <LANZAMIENTO DE EXCEPCIONES>
+    ...
+else:
+    <EN CASO NO OCURRAN EXCEPCIONES>
+    ...
+finally:
+    <BLOQUE DE EJECUCIÓN FINAL>
+    ...
+```
+
+### _Lanzamiento de excepciones - **raise**_
+
+`raise` nos permite forzar la ocurrencia de una excepción específica.
+
+```python
+>>> raise NameError('Hola Clase!')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: Hola Clase!
+```
+
+```python
+def duplica(num):
+    try:
+        if not isinstance(num,int):
+            raise ValueError('No puede ingresar letras')
+        return num*2
+    except ValueError as ve:
+        print(ve)
+        return False
+```
+
+```python
+def divisors(num):
+    divisors = []
+    for i in range(1, num + 1):
+        if num % i == 0:
+            divisors.append(i)
+    return divisors
+
+
+def run():
+    while True:
+        try:
+            num = int(input('Ingresa un número: '))
+            if num < 0:
+                raise ValueError
+            print(divisors(num))
+            print("Terminó mi programa")
+            break
+        except ValueError:
+            print("Debes ingresar un entero positivo")
+
+
+if __name__ == '__main__':
+    run()
+```
+
 ## **Assert statements**
+
+Al manejar los errores es posible determinar afirmaciones, expresiones que afirman o condicionan el programa.
+
+En caso la afirmación no se cumplma, devolverá un error.
+
+```python
+assert <CONDICIÓN>, <MENSAJE DE ERROR>
+```
+
+![Flujo Assert Statement](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2021/05/working-of-the-Assertion-in-Python.png)
+
+
+```python
+def duplica(num):
+    try:
+        assert isinstance(num,int), "SOLO SE PERMITEN NÚMEROS ENTEROS!"
+        return num*2
+    except ValueError as ve:
+        print(ve)
+        return False
+```
+
+```python
+def divisors(num):
+    divisors = []
+    for i in range(1, num + 1):
+        if num % i == 0:
+            divisors.append(i)
+    return divisors
+
+
+def run():
+    num = input('Ingresa un número: ')
+    assert num.isnumeric(), "Debes ingresar un número"
+    print(divisors(int(num)))
+    print("Terminó mi programa")
+
+
+if __name__ == '__main__':
+    run()
+```
+
+
 ## **Manipulación de archivos**
+
+Manipular archivos es de suma importancia al momento de gestionar nuestros proyectos, podemos tratarlos como **archivos de texto** o **como un binario**.
+
+### _Modos de apertura_
+- `r -> Lectrura`
+- `w -> Escritura (sobrescribe)`
+- `a -> Escritura (añade)`
+
+
+### _Método de apertura_
+`with` Es un manejador contextual, nos ayuda a controlar el flujo del archivo (sirve para que el archivo no se dañe cuando existe algún cierre inesperado)
+
+```python
+with open(<ruta>, <modo_apertura>) as <nombre>
+    ...
+```
+
+```python
+def read():
+    numbers = []
+    # encoding='utf-8'
+    with open("./archivos/numbers.txt", "r") as f: 
+        for line in f:
+            numbers.append(int(line))
+    print(numbers)
+
+
+def write():
+    names = ["Juanjo", "Manuel", "Andrea", "Nicole", "Alessandra"]
+    with open("./archivos/names.txt", "w") as f:
+        for name in names: 
+            f.write(name)
+            f.write("\n")
+
+
+def run():
+    write()
+
+
+if __name__ == '__main__':
+    run()
+```
