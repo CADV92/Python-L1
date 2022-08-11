@@ -75,7 +75,7 @@ for i in range(0,5):
 
 -	Desde PowerShell
 	```powershell
-	winget install ..id=Microsoft.WindowsTerminal -e
+	winget install --id=Microsoft.WindowsTerminal -e
 	```
 	```powershell
 	choco install Microsoft-windows-terminal
