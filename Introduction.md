@@ -54,7 +54,7 @@ if random.randint(0,6) ==1:
 count1=0
 for i in range(0,5):
 	count2 = 0
-	for j in trange(0,3):
+	for j in range(0,3):
 		print(count1)
 		if i==j:
 			print("MATCH")
